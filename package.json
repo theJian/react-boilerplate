@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --config webpack.dev.config.js",
+    "serve": "npm run build:client && node server.js",
     "build": "npm run build:client",
     "build:client": "webpack --config webpack.client.config.js"
   },
@@ -30,6 +31,7 @@
     "webpack-merge": "^0.15.0"
   },
   "dependencies": {
+    "compression": "^1.6.2",
     "express": "^4.14.0",
     "react": "^15.3.2",
     "react-dom": "^15.3.2"
