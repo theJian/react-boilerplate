@@ -45,3 +45,5 @@ removeDirRecursive('.git');
 // Remove LICENSE file
 fs.unlinkSync('LICENSE');
 
+// Remove self
+fs.unlinkSync(__filename);
