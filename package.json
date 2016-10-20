@@ -2,13 +2,14 @@
   "name": "react-boilerplate",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --config webpack.dev.config.js",
     "serve": "npm run build:client && node server.js",
     "build": "npm run build:client",
-    "build:client": "webpack --config webpack.client.config.js"
+    "build:client": "webpack --config webpack.client.config.js",
+    "setup": "node setup.js"
   },
   "repository": {
     "type": "git",
